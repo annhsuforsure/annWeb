@@ -14,7 +14,7 @@
 		<div id="container">
 			<div id="header">
 				<nav class="navbar navbar-toggleable-md navbar-light">
-				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				  <button id="toggler-icon-click" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
 				  <a id="logo" class="navbar-brand" href="#top">AnnHsu</a>
@@ -318,6 +318,11 @@
 				 		window.location.href = newurl;
 				 	}
 				 });
+
+				 // click nav-link
+				 $('.nav-link').click(function(){
+				 	$('#toggler-icon-click').click();
+				 })
 
 				 // verify password before download file
 				 var pw = 'kk';
