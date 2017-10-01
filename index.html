@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>智慧商務行動平台 | WorkLink</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="icon" href="dist/images/worklink_appicon.png">
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<nav class="navbar navbar-toggleable-md navbar-light">
+				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <a id="logo" class="navbar-brand" href="#top" data-i18n="app.header"><!-- Home --></a>
+				  <div class="collapse navbar-collapse" id="navbarText">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#intro">intro</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#renoir">卓越功能</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#self">價格方案</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#bkd">訂購聯繫</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#web">企業資訊</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#internal">internal</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#skill">skill</a>
+				      </li>
+				    </ul>
+				    <span class="navbar-text">
+				    <div class="dropdown">
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Dropdown
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+					    <button class="dropdown-item" type="button" id="tw">繁體中文</button>
+					    <button class="dropdown-item" type="button" id="en">English</button>
+					  </div>
+					</div>
+				    <button type="button" class="btn btn-contact" data-toggle="modal" data-target="#exampleModalLong">contact</button>
+				</span>
+				  </div>
+				</nav>
+			</div>
+			<div id="body">
+				<div id="top" class="banner"></div>
+				<a href="#intro">
+					<i class="fa fa-angle-down" style="font-size: 50px;"></i>
+				</a>
+				<div class="items">
+					<div id="intro" class="content">
+						<div class="photo"></div>
+						<div class="text">便捷行動公文簽核，自動化流程作業提升行政效率。</div>
+					</div>
+					<div id="renoir" class="content">
+						<div class="text">WorkLink 提供即時訊息傳輸及檔案自動儲存，並可讓您得知個別訊息讀取狀態。</div>
+						<div class="photo"></div>
+					</div>
+					<div id="self" class="content">
+						<div class="photo"></div>
+						<div class="text">可於任何裝置存取企業專屬之檔案，隨時隨地在辦公室環境內外檔案共享。</div>
+					</div>
+					<div id="bkd" class="content">
+						<div class="text">進化版通訊管理，可自動更新同步組織聯絡資訊。</div>
+						<div class="photo"></div>
+					</div>
+					<div id="web" class="content">
+						<div class="photo"></div>
+						<div class="text">可預約公告發佈日期、公告置頂及附加檔案，亦可檢視每個使用者讀取的狀態，以分辨公告訊息是否已讀。</div>
+					</div>
+					<div id="internal" class="content">
+						<div class="text">專屬訊息通知功能，即時傳遞組織內部訊息。</div>
+						<div class="photo"></div>
+					</div>
+					<div id="skill" class="content"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Contact now</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div id="code">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/i18n.js"></script>
+		<script>
+		    $(document).ready(function (){
+		        $('a[href*="#"]')
+				  // Remove links that don't actually link to anything
+				  .not('[href="#"]')
+				  .not('[href="#0"]')
+				  .click(function(event) {
+				    // On-page links
+				    if (
+				      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+				      &&
+				      location.hostname == this.hostname
+				    ) {
+				      // Figure out element to scroll to
+				      var target = $(this.hash);
+				      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				      // Does a scroll target exist?
+				      if (target.length) {
+				          var navlist = $('.nav-item');
+				          for(var i = 0; i < navlist.length; i++){
+					        if(navlist[i].children[0].hash == '#' + target[0].id){
+					        	navlist[i].className = "nav-item active";
+					        }else{
+					        	navlist[i].className = "nav-item";
+					        }
+				          }
+				        // Only prevent default if animation is actually gonna happen
+				        event.preventDefault();
+				        $('html, body').animate({
+				          scrollTop: target.offset().top
+				        }, 1000, function() {
+				          // Callback after animation
+				          // Must change focus!
+				          var $target = $(target);
+				          $target.focus();
+				          if ($target.is(":focus")) { // Checking if the target was focused
+				            return false;
+				          } else {
+				            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+				            $target.focus(); // Set focus again
+				          };
+				        });
+				      }
+				    }
+				  });
+				 $('#tw').click(function(event) {
+				 	$('#dropdownMenu')[0].innerText = event.target.innerText;
+				 });
+				 $('#en').click(function(event) {
+				 	$('#dropdownMenu')[0].innerText = event.target.innerText;
+				 });
+		    });
+		</script>
+	</div>
+</html>
