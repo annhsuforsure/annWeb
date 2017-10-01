@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>智慧商務行動平台 | WorkLink</title>
+		<title>AnnHsu | Annology</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel="icon" href="dist/images/worklink_appicon.png">
+		<link rel="icon" href="image/an.png">
 		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/reset.css">
@@ -17,77 +17,155 @@
 				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
-				  <a id="logo" class="navbar-brand" href="#top" data-i18n="app.header"><!-- Home --></a>
+				  <a id="logo" class="navbar-brand" href="#top">AnnHsu</a>
 				  <div class="collapse navbar-collapse" id="navbarText">
 				    <ul class="navbar-nav mr-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#intro">intro</a>
+				        <a class="nav-link" href="#intro" data-i18n="app.nav.intro"><!-- 介紹 --></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#renoir">卓越功能</a>
+				        <a class="nav-link" href="#renoir" data-i18n="app.nav.renoir"><!-- 程式之前 --></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#self">價格方案</a>
+				        <a class="nav-link" href="#self" data-i18n="app.nav.self"><!-- 自學之路 --></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#bkd">訂購聯繫</a>
+				        <a class="nav-link" href="#bkd" data-i18n="app.nav.bkd"><!-- 產品-管理者系統 --></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#web">企業資訊</a>
+				        <a class="nav-link" href="#web" data-i18n="app.nav.web"><!-- 產品-使用者系統 --></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#internal">internal</a>
+				        <a class="nav-link" href="#internal" data-i18n="app.nav.internal"><!-- 產品-內部系統 --></a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#skill">skill</a>
+				        <a class="nav-link" href="#skill" data-i18n="app.nav.skill"><!-- 技能 --></a>
 				      </li>
 				    </ul>
 				    <span class="navbar-text">
 				    <div class="dropdown">
-					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Dropdown
-					  </button>
+					  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-i18n="app.language.tw"><!-- 繁體中文 --></button>
 					  <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-					    <button class="dropdown-item" type="button" id="tw">繁體中文</button>
-					    <button class="dropdown-item" type="button" id="en">English</button>
+					    <button class="dropdown-item" type="button" id="tw" data-i18n="app.language.tw"><!-- 繁體中文 --></button>
+					    <button class="dropdown-item" type="button" id="en" data-i18n="app.language.en"><!-- English --></button>
 					  </div>
 					</div>
-				    <button type="button" class="btn btn-contact" data-toggle="modal" data-target="#exampleModalLong">contact</button>
+				    <button type="button" class="btn btn-contact" data-toggle="modal" data-target="#exampleModalLong" data-i18n="app.nav.contact"><!-- 聯絡我 --></button>
 				</span>
 				  </div>
 				</nav>
 			</div>
 			<div id="body">
-				<div id="top" class="banner"></div>
-				<a href="#intro">
+				<div id="top" class="banner">
+					<div><img src="image/banner.jpg"></div>
+					<div data-i18n="app.banner"><!-- 徐佳安 Ann Hsu<br /><br />
+						大學四年主修企業管理，畢業後擔任行銷企劃三年。<br />
+						熟悉品牌行銷、消費者行為及市場特性，<br />
+						進入的職場第四年，開始自學程式語言。<br />
+						轉職工程師後，擅長透過敏銳觀察及清晰邏輯解決問題，<br />
+						現任公司主產品前端網頁負責人。不斷學習新領域，並且樂在其中。 -->
+					</div>
+				</div>
+				<a href="#beforeintro" id="beforeintro">
 					<i class="fa fa-angle-down" style="font-size: 50px;"></i>
 				</a>
 				<div class="items">
-					<div id="intro" class="content">
-						<div class="photo"></div>
-						<div class="text">便捷行動公文簽核，自動化流程作業提升行政效率。</div>
+					<div id="intro" class="content bg_deepcolor">
+						<div class="text" data-i18n="app.intro">
+							<!-- 徐佳安<br /><br />
+							新北市永和區<br />
+							1990.8.30<br />
+							輔仁大學 企業管理學系 畢業<br />
+							#自助旅行 #底片攝影<br />
+							#網路重度使用者 -->
+						</div>
+						<div class="photo"><img src="image/intro.png"></div>
 					</div>
 					<div id="renoir" class="content">
-						<div class="text">WorkLink 提供即時訊息傳輸及檔案自動儲存，並可讓您得知個別訊息讀取狀態。</div>
-						<div class="photo"></div>
+						<div class="text">
+							<div class="period">Jul.2012 - Oct.2015</div>
+							<div class="title" data-i18n="app.renoir.title"><!-- 雷諾瓦國際有限公司 策略發展部 品牌行銷組 行銷企劃專員 --></div>
+							<div class="work" data-i18n="app.renoir.work"><!-- 負責全台20餘家門市的活動企劃、產品企劃及執行，接洽圖像授權及產品送審業務，經手過好市多合作專案、產品製程改善專案、公司官方APP開發專案。 --></div>
+						</div>
+						<div class="photo">
+							<div class="photo_box">
+								<div class="box"><img src="image/puzzle.png"></div>
+								<div class="box"><img src="image/shop.png"></div>
+								<div class="box"><img src="image/app.png"></div>
+								<div class="box"><img src="image/puzzle.png"></div>
+							</div>
+						</div>
 					</div>
-					<div id="self" class="content">
-						<div class="photo"></div>
-						<div class="text">可於任何裝置存取企業專屬之檔案，隨時隨地在辦公室環境內外檔案共享。</div>
+					<div id="self" class="content bg_deepcolor">
+						<div class="photo"><img src="image/firstweb.png"></div>
+						<div class="text">
+							<div class="period">Aug.2015 - Dec.2015</div>
+							<div class="title"></div>
+							<div class="work" data-i18n="app.self.work"><!-- 自學Html、Css及Javascript，完成個人靜態網站也得到了第一份工程師工作，期望以市場面向切入網頁/程式開發，打造更美好的產品。 --></div>
+						</div>
 					</div>
 					<div id="bkd" class="content">
-						<div class="text">進化版通訊管理，可自動更新同步組織聯絡資訊。</div>
-						<div class="photo"></div>
+						<div class="text">
+							<div class="period">Jan.2016 - present</div>
+							<div class="title" data-i18n="app.bkd.title"><!-- 中兆匯科技服務股份有限公司 前端工程師 --></div>
+							<div class="work" data-i18n="app.bkd.work"><!-- 負責公司主線產品WorkLink的網頁後台，以React.js與flux進行產品維護及新功能開發，並使用git、postman等工具，同時具備RESTful api、RWD、AJAX等基本概念。 --></div>
+						</div>
+						<div class="photo"><img src="image/devices.png"></div>
 					</div>
-					<div id="web" class="content">
+					<div id="web" class="content bg_deepcolor">
 						<div class="photo"></div>
-						<div class="text">可預約公告發佈日期、公告置頂及附加檔案，亦可檢視每個使用者讀取的狀態，以分辨公告訊息是否已讀。</div>
+						<div class="text">
+							<div class="period">Oct.2016 - present</div>
+							<div class="title"></div>
+							<div class="work" data-i18n="app.web.work"></div>
+						</div>
 					</div>
 					<div id="internal" class="content">
-						<div class="text">專屬訊息通知功能，即時傳遞組織內部訊息。</div>
+						<div class="text">
+							<div class="period">Apr.2017 - present</div>
+							<div class="title"></div>
+							<div class="work" data-i18n="app.internal.work"></div>
+						</div>
 						<div class="photo"></div>
 					</div>
-					<div id="skill" class="content"></div>
+					<div id="skill" class="content bg_deepcolor">
+						<div class="text">
+							<div class="title" data-i18n="app.skill.title1"><!-- 技術能力 --></div>
+							<div class="work">HTML / CSS / Javascript / react / flux / redux / PHP / git / webpack / gulp / Zeplin / Photoshop / Illustrator</div>
+
+							<div class="title" data-i18n="app.skill.title2"><!-- 語言能力 --></div>
+							<div class="work" data-i18n="app.skill.work2"><!-- 英文 流暢 / 中文 精通 / 台語 精通 --></div>
+
+							<div class="title" data-i18n="app.skill.title3"><!-- 人際關係能力 --></div>
+							<div class="work" data-i18n="app.skill.work3"><!-- 清楚表達能力 / 溝通能力 / 衝突協調能力 --></div>
+						</div>
+						<div class="photo">
+							<ul>
+								<li class="icon"><img src="image/html5.png"></li>
+								<li class="icon"><img src="image/css3.png"></li>
+								<li class="icon"><img src="image/js.png"></li>
+								<li class="icon"><img src="image/php.png"></li>
+							</ul>
+							<ul>
+								<li class="icon"><img src="image/ps.png"></li>
+								<li class="icon"><img src="image/ai.png"></li>
+							</ul>
+							<ul>
+								<li class="icon"><img src="image/react.png"></li>
+								<li class="icon"><img src="image/flux.png" style="padding: 8px;"></li>
+								<li class="icon"><img src="image/redux.png" style="border-radius: 0;padding: 8px;"></li>
+								<li class="icon"><img src="image/gulp.png" style="padding: 8px;"></li>
+								<li class="icon"><img src="image/webpack.png"></li>
+							</ul>
+							<ul>
+								<li class="icon"><img src="image/github.png"></li>
+								<li class="icon"><img src="image/git.png"></li>
+								<li class="icon"><img src="image/postman.png"></li>
+								<li class="icon"><img src="image/zeplin.png"></li>
+								<li class="icon"><img src="image/sublime.png"></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -97,7 +175,7 @@
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+	        <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="app.contact"><!-- 聯絡我 --></h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -144,7 +222,7 @@
 				        // Only prevent default if animation is actually gonna happen
 				        event.preventDefault();
 				        $('html, body').animate({
-				          scrollTop: target.offset().top
+				          scrollTop: target.offset().top - 120
 				        }, 1000, function() {
 				          // Callback after animation
 				          // Must change focus!
@@ -161,10 +239,26 @@
 				    }
 				  });
 				 $('#tw').click(function(event) {
-				 	$('#dropdownMenu')[0].innerText = event.target.innerText;
+				 	var url = window.location.href;
+				 	var newurl = url + '?lng=tw';
+				 	if(getUrlVars()["lng"]){
+				 		if((getUrlVars()["lng"] == 'en')){
+				 			window.location.href = window.location.href.replace('en', 'tw');
+				 		}
+				 	}else{
+				 		window.location.href = newurl;
+				 	}
 				 });
 				 $('#en').click(function(event) {
-				 	$('#dropdownMenu')[0].innerText = event.target.innerText;
+				 	var url = window.location.href;
+				 	var newurl = url + '?lng=en';
+				 	if(getUrlVars()["lng"]){
+				 		if((getUrlVars()["lng"] == 'tw')){
+				 			window.location.href = window.location.href.replace('tw', 'en');
+				 		}
+				 	}else{
+				 		window.location.href = newurl;
+				 	}
 				 });
 		    });
 		</script>
