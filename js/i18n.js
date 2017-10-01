@@ -4,14 +4,20 @@ var tw = {
 			"intro": "介紹",
 			"renoir": "程式之前",
 			"self": "自學之路",
-			"bkd": "產品-管理者系統",
-			"web": "產品-使用者系統",
-			"internal": "產品-內部系統",
+			"bkd": "管理者系統",
+			"web": "使用者系統",
+			"internal": "內部系統",
 			"skill": "技能",
 			"contact": "聯絡我",
 		},
+		"download_tw": "中文履歷",
+		"download_en": "英文履歷",
+		"download": "下載",
+		"enter_pw": "請輸入密碼",
+		"cancel": "取消",
+		"submit": "確認",
 		"banner": "徐佳安 Ann Hsu<br /><br />大學四年主修企業管理，畢業後擔任行銷企劃三年。<br />熟悉品牌行銷、消費者行為及市場特性，<br />進入的職場第四年，開始自學程式語言。<br />轉職工程師後，擅長透過敏銳觀察及清晰邏輯解決問題，<br />現任公司主產品前端網頁負責人。不斷學習新領域，並且樂在其中。",
-		"intro": "徐佳安<br /><br />新北市永和區<br />1990.8.30<br />輔仁大學 企業管理學系 畢業<br />\#自助旅行 \#底片攝影<br />\#網路重度使用者",
+		"intro": "徐佳安<br /><br />新北市永和區<br />1990.8.30<br />輔仁大學 企業管理學系 畢業<br /><br />\#自助旅行 \#底片攝影<br />\#網路重度使用者",
 		"renoir": {
 			"title": "雷諾瓦國際有限公司 策略發展部 品牌行銷組 行銷企劃專員",
 			"work": "負責全台20餘家門市的活動企劃、產品企劃及執行，接洽圖像授權及產品送審業務，經手過好市多合作專案、產品製程改善專案、公司官方APP開發專案。",
@@ -46,16 +52,22 @@ en = {
 	"app": {
 		"nav": {
 			"intro": "Intro",
-			"renoir": "程式之前",
-			"self": "自學之路",
-			"bkd": "產品-管理者系統",
-			"web": "產品-使用者系統",
-			"internal": "產品-內部系統",
+			"renoir": "Before Coding",
+			"self": "Self-learning",
+			"bkd": "Management System",
+			"web": "User System",
+			"internal": "Internal System",
 			"skill": "Skill",
 			"contact": "Contact",
 		},
+		"download_tw": "Resume(tw)",
+		"download_en": "Resume(en)",
+		"download": "Download",
+		"enter_pw": "Please enter the password",
+		"cancel": "Cancel",
+		"submit": "Submit",
 		"banner": "Ann Hsu<br /><br />I majored in Business Administration for Bachelor's Degree, <br />and had been doing marketing for over 3 years. <br />I excel in Branding Strategy, Consumer Behavior and Market Analysis. <br />After working in the marketing industry for 3 year, I started to learn programming on my own. <br />I became a Front-end engineer, have been developing and maintaining main product of company. <br />My philosophy is to keep learning new things and ENJOY it.",
-		"intro": "CHIA-AN, HSU<br /><br />Yonghe District, New Taipei City<br />August 30th 1990<br />Business Administration, Fu Jen Catholic University<br />\#travelToTheWorld \#filmPhotography<br />\#heavyUsers",
+		"intro": "CHIA-AN, HSU<br /><br />Yonghe District, New Taipei City<br />August 30th 1990<br />Business Administration, Fu Jen Catholic University<br /><br />\#travelToTheWorld \#filmPhotography<br />\#heavyUsers",
 		"renoir": {
 			"title": "Renoir Co., Ltd Marketing Executive",
 			"work": "I was responsible for event planning and executions. I communicated with authorized agents to make sure that products are approved and produced in schedule. Also, I was a part of the Costco roadshow project, doing manufacturing process improvement and official app development.",
@@ -104,7 +116,7 @@ for (var i = 0, n = allElements.length; i < n; i++){
 		allElements[i].innerHTML = getString(lng, allElements[i].getAttribute("data-i18n").split("."));
 	}
 }
-$('#dropdownMenu')[0].innerHTML = lng.app.language[getUrlVars()["lng"]];
+$('#dropdownMenu')[0].innerHTML = lng.app.language[getUrlVars()["lng"] ? getUrlVars()["lng"] : "tw"];
 function getUrlVars() {
 	var vars = [],
 		hash;

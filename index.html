@@ -58,12 +58,16 @@
 			<div id="body">
 				<div id="top" class="banner">
 					<div><img src="image/banner.jpg"></div>
-					<div data-i18n="app.banner"><!-- 徐佳安 Ann Hsu<br /><br />
-						大學四年主修企業管理，畢業後擔任行銷企劃三年。<br />
-						熟悉品牌行銷、消費者行為及市場特性，<br />
-						進入的職場第四年，開始自學程式語言。<br />
-						轉職工程師後，擅長透過敏銳觀察及清晰邏輯解決問題，<br />
-						現任公司主產品前端網頁負責人。不斷學習新領域，並且樂在其中。 -->
+					<div>
+						<div data-i18n="app.banner"><!-- 徐佳安 Ann Hsu<br /><br />
+							大學四年主修企業管理，畢業後擔任行銷企劃三年。<br />
+							熟悉品牌行銷、消費者行為及市場特性，<br />
+							進入的職場第四年，開始自學程式語言。<br />
+							轉職工程師後，擅長透過敏銳觀察及清晰邏輯解決問題，<br />
+							現任公司主產品前端網頁負責人。不斷學習新領域，並且樂在其中。 -->
+						</div>
+						<button id="tw_resume" type="button" class="btn btn-contact" data-toggle="modal" data-target="#downloadTWModalLong" ><i class="fa fa-download" style="padding-right: 10px;"></i><span data-i18n="app.download_tw"><!-- 下載中文履歷 --></button>
+						<button id="en_resume" type="button" class="btn btn-contact" data-toggle="modal" data-target="#downloadENModalLong" ><i class="fa fa-download" style="padding-right: 10px;"></i><span data-i18n="app.download_en"><!-- 下載英文履歷 --></span></button>
 					</div>
 				</div>
 				<a href="#beforeintro" id="beforeintro">
@@ -183,12 +187,60 @@
 	      <div class="modal-body">
 	        ...
 	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal download tw-->
+	<div class="modal fade" id="downloadTWModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="app.download"><!-- 下載 --></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="password" class="form-control-label" data-i18n="app.enter_pw"><!-- 請輸入密碼 --></label>
+	            <input type="text" class="form-control" id="password">
+	          </div>
+	        </form>
+	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Contact now</button>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-i18n="app.cancel"><!-- 取消 --></button>
+	        <button type="button" class="btn btn-contact" id="download_tw" data-i18n="app.submit"><!-- 送出 --></button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+	<!-- Modal download en-->
+	<div class="modal fade" id="downloadENModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="app.download">下載</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="password" class="form-control-label" data-i18n="app.enter_pw">請輸入密碼</label>
+	            <input type="text" class="form-control" id="password">
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-i18n="app.cancel">取消</button>
+	        <button type="button" class="btn btn-contact" id="download_en" data-i18n="app.submit">送出</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div id="code">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -260,6 +312,19 @@
 				 		window.location.href = newurl;
 				 	}
 				 });
+
+				 // verify password before download file
+				 var pw = 'kk';
+				 $('#download_tw').click(function() {
+				 	if($('#password')[0].value == pw){
+				 		window.open('file/Resume_tw.pdf');
+				 	}
+			 	});
+				 $('#download_en').click(function() {
+				 	if($('#password')[0].value == pw){
+				 		window.open('file/Resume_en.pdf');
+				 	}
+			 	});
 		    });
 		</script>
 	</div>
