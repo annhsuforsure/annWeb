@@ -117,20 +117,20 @@
 						<div class="photo"><img src="image/devices.png"></div>
 					</div>
 					<div id="web" class="content bg_deepcolor">
-						<div class="photo"></div>
+						<div class="photo"><img src="image/chat.png"></div>
 						<div class="text">
 							<div class="period">Oct.2016 - present</div>
 							<div class="title"></div>
-							<div class="work" data-i18n="app.web.work"></div>
+							<div class="work" data-i18n="app.web.work"><!-- 以React.js與flux進行產品維護及新功能開發，利用Socket.IO建立即時通訊功能，與後端、iOS、Android工程師同步開發，並與UI/UX設計師討論並改善可行性。 --></div>
 						</div>
 					</div>
 					<div id="internal" class="content">
 						<div class="text">
 							<div class="period">Apr.2017 - present</div>
 							<div class="title"></div>
-							<div class="work" data-i18n="app.internal.work"></div>
+							<div class="work" data-i18n="app.internal.work"><!-- 以React.js與Redux建立內部系統，以便公司業務、會計線上建立訂單、開立發票、合約和客戶管理，並提供主管匯出報表、查看成效並訂立新銷售策略。 --></div>
 						</div>
-						<div class="photo"></div>
+						<div class="photo"><img src="image/internals.png"></div>
 					</div>
 					<div id="skill" class="content bg_deepcolor">
 						<div class="text">
@@ -190,18 +190,18 @@
 	        +886-910-333-553
         </div>
 	      <div class="modal-footer">
-	      	<button type="button" class="btn btn-contact" id="mail"><a href="mailto:annnnn0830@gmial.com" style="color: inherit;"><i class="fa fa-envelope-o"></i></a></button>
+	      	<button type="button" class="btn btn-contact" id="mail"><a href="mailto:annnnn0830@gmail.com" style="color: inherit;"><i class="fa fa-envelope-o"></i></a></button>
 	        <button type="button" class="btn btn-contact" id="phone"><a href="tel:+886910333553" style="color: inherit;"><i class="fa fa-phone"></i></a></button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
 	<!-- Modal download tw-->
-	<div class="modal fade" id="downloadTWModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	<div class="modal fade" id="downloadTWModalLong" tabindex="-1" role="dialog" aria-labelledby="TWModalLongTitle" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="app.download"><!-- 下載 --></h5>
+	        <h5 class="modal-title" id="TWModalLongTitle" data-i18n="app.download"><!-- 下載 --></h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -210,7 +210,7 @@
 	        <form>
 	          <div class="form-group">
 	            <label for="password" class="form-control-label" data-i18n="app.enter_pw"><!-- 請輸入密碼 --></label>
-	            <input type="text" class="form-control" id="password">
+	            <input type="text" class="form-control" id="TWpassword">
 	          </div>
 	        </form>
 	      </div>
@@ -222,11 +222,11 @@
 	  </div>
 	</div>
 	<!-- Modal download en-->
-	<div class="modal fade" id="downloadENModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+	<div class="modal fade" id="downloadENModalLong" tabindex="-1" role="dialog" aria-labelledby="ENModalLongTitle" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLongTitle" data-i18n="app.download">下載</h5>
+	        <h5 class="modal-title" id="ENModalLongTitle" data-i18n="app.download"><!-- 下載 --></h5>
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 	          <span aria-hidden="true">&times;</span>
 	        </button>
@@ -234,14 +234,39 @@
 	      <div class="modal-body">
 	        <form>
 	          <div class="form-group">
-	            <label for="password" class="form-control-label" data-i18n="app.enter_pw">請輸入密碼</label>
-	            <input type="text" class="form-control" id="password">
+	            <label for="password" class="form-control-label" data-i18n="app.enter_pw"><!-- 請輸入密碼 --></label>
+	            <input type="text" class="form-control" id="ENpassword">
 	          </div>
 	        </form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-i18n="app.cancel">取消</button>
-	        <button type="button" class="btn btn-contact" id="download_en" data-i18n="app.submit">送出</button>
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal" data-i18n="app.cancel"><!-- 取消 --></button>
+	        <button type="button" class="btn btn-contact" id="download_en" data-i18n="app.submit"><!-- 送出 --></button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Modal Useless-->
+	<div class="modal fade" id="UselessModal" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="ModalLongTitle" data-i18n="app.download"><!-- 下載 --></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	          <div class="form-group">
+	            <label for="password" class="form-control-label" data-i18n="app.enter_pw"><!-- 請輸入密碼 --></label>
+	            <input type="text" class="form-control">
+	          </div>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-i18n="app.cancel"><!-- 取消 --></button>
+	        <button type="button" class="btn btn-contact" data-i18n="app.submit"><!-- 送出 --></button>
 	      </div>
 	    </div>
 	  </div>
@@ -253,88 +278,110 @@
 		<script type="text/javascript" src="js/i18n.js"></script>
 		<script>
 		    $(document).ready(function (){
-		        $('a[href*="#"]')
-				  // Remove links that don't actually link to anything
-				  .not('[href="#"]')
-				  .not('[href="#0"]')
-				  .click(function(event) {
-				    // On-page links
-				    if (
-				      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-				      &&
-				      location.hostname == this.hostname
-				    ) {
-				      // Figure out element to scroll to
-				      var target = $(this.hash);
-				      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-				      // Does a scroll target exist?
-				      if (target.length) {
-				          var navlist = $('.nav-item');
-				          for(var i = 0; i < navlist.length; i++){
-					        if(navlist[i].children[0].hash == '#' + target[0].id){
-					        	navlist[i].className = "nav-item active";
-					        }else{
-					        	navlist[i].className = "nav-item";
-					        }
-				          }
-				        // Only prevent default if animation is actually gonna happen
-				        event.preventDefault();
-				        $('html, body').animate({
-				          scrollTop: target.offset().top - 120
-				        }, 1000, function() {
-				          // Callback after animation
-				          // Must change focus!
-				          var $target = $(target);
-				          $target.focus();
-				          if ($target.is(":focus")) { // Checking if the target was focused
-				            return false;
-				          } else {
-				            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-				            $target.focus(); // Set focus again
-				          };
-				        });
-				      }
-				    }
-				  });
-				 $('#tw').click(function(event) {
-				 	var url = window.location.href;
-				 	var newurl = url + '?lng=tw';
-				 	if(getUrlVars()["lng"]){
-				 		if((getUrlVars()["lng"] == 'en')){
-				 			window.location.href = window.location.href.replace('en', 'tw');
-				 		}
-				 	}else{
-				 		window.location.href = newurl;
-				 	}
-				 });
-				 $('#en').click(function(event) {
-				 	var url = window.location.href;
-				 	var newurl = url + '?lng=en';
-				 	if(getUrlVars()["lng"]){
-				 		if((getUrlVars()["lng"] == 'tw')){
-				 			window.location.href = window.location.href.replace('tw', 'en');
-				 		}
-				 	}else{
-				 		window.location.href = newurl;
-				 	}
-				 });
+				$('a[href*="#"]')
+					// Remove links that don't actually link to anything
+					.not('[href="#"]')
+					.not('[href="#0"]')
+					.click(function(event) {
+						// On-page links
+						if (
+						location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+						&&
+						location.hostname == this.hostname
+						) {
+							// Figure out element to scroll to
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+							// Does a scroll target exist?
+							if (target.length) {
+								var navlist = $('.nav-item');
+								for(var i = 0; i < navlist.length; i++){
+									if(navlist[i].children[0].hash == '#' + target[0].id){
+										navlist[i].className = "nav-item active";
+									}else{
+										navlist[i].className = "nav-item";
+									}
+								}
+								// Only prevent default if animation is actually gonna happen
+								event.preventDefault();
+								$('html, body').animate({
+									scrollTop: target.offset().top - 120
+								}, 1000, function() {
+									// Callback after animation
+									// Must change focus!
+									var $target = $(target);
+									$target.focus();
+									if ($target.is(":focus")) { // Checking if the target was focused
+										return false;
+									} else {
+										$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+										$target.focus(); // Set focus again
+									};
+								});
+							}
+						}
+					});
 
-				 // click nav-link
-				 $('.nav-link').click(function(){
-				 	$('#toggler-icon-click').click();
-				 })
+				$('#tw').click(function(event) {
+					var url = window.location.href;
+					var newurl = url + '?lng=tw';
+					if(getUrlVars()["lng"]){
+						if((getUrlVars()["lng"] == 'en')){
+							window.location.href = window.location.href.replace('en', 'tw');
+						}
+					}else{
+						window.location.href = newurl;
+					}
+				});
+				$('#en').click(function(event) {
+					var url = window.location.href;
+					var newurl = url + '?lng=en';
+					if(getUrlVars()["lng"]){
+						if((getUrlVars()["lng"] == 'tw')){
+							window.location.href = window.location.href.replace('tw', 'en');
+						}
+					}else{
+						window.location.href = newurl;
+					}
+				});
 
-				 // verify password before download file
-				 var pw = 'kk';
-				 $('#download_tw').click(function() {
-				 	if($('#password')[0].value == pw){
-				 		window.open('file/Resume_tw.pdf');
-				 	}
+				// click nav-link
+				$('.nav-link').click(function(){
+					$('#toggler-icon-click').click();
+				})
+
+				// verify password before download file
+				var pw = 'kk';
+				function download(url) {
+					var link = document.createElement('a');
+					document.body.appendChild(link); // Firefox requires the link to be in the body
+					link.href = url;
+					link.target = '_blank';
+					link.click();
+					document.body.removeChild(link); // remove the link when done
+				}
+				$('#download_tw').click(function() {
+					if($('#TWpassword')[0].value == pw){
+						download('file/Resume_tw.pdf');
+						$('#downloadTWModalLong').click();
+					}else{
+						$('#TWpassword').css('border-color','red');
+					}
 			 	});
-				 $('#download_en').click(function() {
-				 	if($('#password')[0].value == pw){
-				 		window.open('file/Resume_en.pdf');
-				 	}
+				$('#download_en').click(function() {
+					if($('#ENpassword')[0].value == pw){
+						download('file/Resume_en.pdf');
+						$('#downloadENModalLong').click();
+					}else{
+						$('#ENpassword').css('border-color','red');
+					}
+			 	});
+			 	// reset border style
+			 	$('#tw_resume').click(function() {
+			 		$('#TWpassword').val('').css('border-color','rgba(0,0,0,.15)');
+			 	});
+			 	$('#en_resume').click(function() {
+			 		$('#ENpassword').val('').css('border-color','rgba(0,0,0,.15)');
 			 	});
 		    });
 		</script>

@@ -89,7 +89,7 @@ body {
 	width: 100%;
 	min-height: calc(100% - 100px);
 	vertical-align: bottom;
-	padding: calc(15% + 86px) 5% 0 5%;
+	padding: calc(12% + 86px) 5% 10% 5%;
 }
 .banner img{
 	width: 60%;

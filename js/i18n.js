@@ -30,10 +30,10 @@ var tw = {
 			"work": "負責公司主線產品WorkLink的網頁後台，以React.js與flux進行產品維護及新功能開發，並使用git、postman等工具，同時具備RESTful api、RWD、AJAX等基本概念。",
 		},
 		"web": {
-			"work": "負責全台20餘家門市的活動企劃、產品企劃及執行，接洽圖像授權及產品送審業務，經手過好市多合作專案、產品製程改善專案、公司官方APP開發專案。",
+			"work": "以React.js與flux進行產品維護及新功能開發，利用Socket.IO建立即時通訊功能，與後端、iOS、Android工程師同步開發，並與UI/UX設計師討論並改善可行性。",
 		},
 		"internal": {
-			"work": "負責全台20餘家門市的活動企劃、產品企劃及執行，接洽圖像授權及產品送審業務，經手過好市多合作專案、產品製程改善專案、公司官方APP開發專案。",
+			"work": "以React.js與Redux建立內部系統，以便公司業務、會計線上建立訂單、開立發票、合約和客戶管理，並提供主管匯出報表、查看成效並訂立新銷售策略。",
 		},
 		"skill": {
 			"title1": "技術能力",
@@ -44,9 +44,9 @@ var tw = {
 		},
 		"language": {
 			"tw": "繁體中文",
-			"en": "English"
+			"en": "English",
 		},
-	}
+	},
 },
 en = {
 	"app": {
@@ -80,23 +80,23 @@ en = {
 			"work": "I have been participating in company's main product-WorkLink. My job includes maintaining and developing new features with React.js and flux. I use git and postman to be more efficient while working. Also I have basic knowledge of RESTful api、RWD、AJAX.",
 		},
 		"web": {
-			"work": "負責全台20餘家門市的活動企劃、產品企劃及執行，接洽圖像授權及產品送審業務，經手過好市多合作專案、產品製程改善專案、公司官方APP開發專案。",
+			"work": "I maintain and develop new features with React.js and flux, build real time front-end using Socket.io. I coordinate with back-end, iOS and Android developers in order to develop synchronously. Also I collaborate with designers to improve usability.",
 		},
 		"internal": {
-			"work": "負責全台20餘家門市的活動企劃、產品企劃及執行，接洽圖像授權及產品送審業務，經手過好市多合作專案、產品製程改善專案、公司官方APP開發專案。",
+			"work": "I build Internal System with React.js and Redux so that our sales and accounting could create orders and invoicing online, manage contracts and clients. Also, the system provide that supervisor could export report to view performance and plan new strategy.",
 		},
 		"skill": {
 			"title1": "Technical Skill",
 			"title2": "Language Skill",
 			"title3": "Interpersonal Skill",
 			"work2": "English: fluent / Mandarin: native speaker / Taiwanese: native speaker",
-			"work2": "Clear expression / Good communication / Effective negotiation",
+			"work3": "Clear expression / Good communication / Effective negotiation",
 		},
 		"language": {
 			"tw": "繁體中文",
-			"en": "English"
+			"en": "English",
 		},
-	}
+	},
 };
 var allElements = document.getElementsByTagName("*");
 var lng = getUrlVars()["lng"] ? getUrlVars()["lng"] : "tw";
@@ -111,7 +111,9 @@ switch (getLng) {
 	default:
 		var lng = tw;
 }
+console.log('allElements',allElements);
 for (var i = 0, n = allElements.length; i < n; i++){
+if(allElements[i].type == 'button') console.log('allElements',i,allElements[i]);
 	if (allElements[i].getAttribute("data-i18n") !== null) {
 		allElements[i].innerHTML = getString(lng, allElements[i].getAttribute("data-i18n").split("."));
 	}
