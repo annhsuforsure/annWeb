@@ -148,12 +148,12 @@ body {
 }
 .content .text{
 	display: inline-block;
-	width: 50%;
+	width: 40%;
 	vertical-align: top;
 }
 .content .photo{
 	display: inline-block;
-	width: 40%;
+	width: 50%;
 	vertical-align: top;
 }
 .content .photo > img,
@@ -183,6 +183,7 @@ body {
 	padding-bottom: 10px;
 }
 .text > .work{
+	line-height: 30px;
 	padding-bottom: 10px;
 }
 @media (max-width: 992px) {
